@@ -104,10 +104,27 @@ a:hover {
   position: fixed;
   top: 24px;
   left: 24px;
-  z-index: 2000;
+  z-index: 9999;
   cursor: pointer;
   user-select: none;
   pointer-events: auto;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  transition: transform 0.2s ease;
+}
+
+.lang-switch:hover {
+  transform: scale(1.04);
+}
+
+.lang-switch:active {
+  transform: scale(0.97);
+}
+
+.lang-switch:focus-visible .lang-switch-track {
+  border-color: #b87aff;
+  box-shadow: 0 0 25px rgba(200, 120, 255, 0.5);
 }
 
 .lang-switch-track {
@@ -124,6 +141,12 @@ a:hover {
   transition: border-color 0.25s, box-shadow 0.25s;
   overflow: hidden;
   pointer-events: auto;
+  cursor: pointer;
+}
+
+.lang-switch:hover .lang-switch-track {
+  border-color: #b87aff;
+  box-shadow: 0 0 25px rgba(200, 120, 255, 0.45);
 }
 
 .lang-switch-thumb {
@@ -138,6 +161,10 @@ a:hover {
   transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
   z-index: 1;
   pointer-events: none;
+}
+
+.lang-switch.tr .lang-switch-thumb {
+  transform: translateX(43px);
 }
 
 .lang-option {
@@ -662,6 +689,7 @@ footer {
   .lang-switch {
     top: 16px;
     left: 16px;
+    z-index: 9999;
   }
 
   .lang-switch-track {
