@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Tc4dy · exploit developer</title>
+  <meta name="description" content="Tc4dy — 16 y.o. exploit developer & pentester. PoC exploits, low-level, privacy. Purple neon portfolio.">
+  <link rel="icon" type="image/png" href="tc4dy.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav-overlay" id="navOverlay">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#exploits" class="nav-link">Exploits</a>
+    <a href="#privacy" class="nav-link">Privacy & Freedom</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="hero">
+      <div class="hero-badge">Planet 9 · Backrooms</div>
+      <h1 class="hero-title">
+        Tc4dy<br>
+        <span class="highlight">just sec stuff, developer :p</span>
+      </h1>
+      <p class="hero-sub">
+        16 y.o Dev/Pentester & open-source advocate. Interested in Privacy, OpSec, Low Level. Also enjoy building PoC & Exploit. I love Sea Lions.
+      </p>
+      <div class="hero-meta" id="heroMeta">
+        <span><span class="dot"></span> <span class="loading" id="followersDisplay">loading followers…</span></span>
+        <span><span class="dot"></span> <span class="loading" id="followingDisplay">loading following…</span></span>
+        <span><span class="dot"></span> <span class="loading" id="reposDisplay">loading repos…</span></span>
+      </div>
+    </section>
+
+    <div class="banner">
+      <img src="tc4dy_purple2.gif" alt="Tc4dy banner" class="banner-gif">
+    </div>
+
+    <section id="about">
+      <div class="section-label">Who am I</div>
+      <h2 class="section-title">About</h2>
+
+      <div class="about-text">
+        <p>
+          So yeah, I'm a 16-year-old cybersecurity tester and software developer. Since I was little I got into computers, especially hardware and software bridges, social media algorithms and how people get tracked through their phones and stuff. I realized every system can have a vulnerability and honestly those vulns coming out actually makes me happy, because even if we want it, having at least some control still in our hands feels nice, so through that I started developing exploits and writing PoCs. I use AI for the skeletons and algorithms I write, to turn them into clean code structure and documentation (like README.md), and at the same time I'm getting familiar with AI and also interested in AI vulnerabilities, uncensored AI, LLMs and Prompt Injection and stuff. I think open source is people's right and I'm trying to do some stuff for it in real-virtual environments. Also btw I think the best coffee is caramel macchiato :l. I'm half human half alien because why not. Turkey is my home. Most nights I'm writing astral travel programs and deleting the code of companies that write closed-source code. Also I look a bit like a sea lion, only difference from them is I write code :v, one day everyone will use open source and love sea lions.
+        </p>
+        <p>
+          I live on the ninth planet (the Wi-Fi's brilliant, the pizza delivery's rubbish) and sometimes I dive into Backrooms during debugging sessions. Outside the cyber temple, I harbour a deep love for sea lions.
+        </p>
+        <p>
+          <strong>Research & Exploitation:</strong> Writing PoC exploits for real-world daily vulnerabilities, UEFI & TPM, Buffer Overflow, Reverse Engineering, Privilege Escalation, web pentest scripting, kernel and system-level vulnerability investigation.
+        </p>
+        <p>
+          <strong>Operating Systems:</strong> Linux customization & configuration, OS debloating, BSD family & Linux hardening. UEFI persistent virus writing attempts and code reviews.
+        </p>
+        <p>
+          <strong>Privacy & Security:</strong> Kernel & hardware-level OpSec (Intel ME, TPM, coreboot & libreboot customization), telemetry removal, Open-source hardware (RISC-V, POWER9, lowRISC), custom ROM, i2p, Lokinet, GNU Net, Nym, Tor configuration.
+        </p>
+        <p>
+          <strong>Programming:</strong> Python, Go, C Family, Java, Assembly for Kernel, Bash/PowerShell Automation.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-label">Selected work</div>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="grid-2">
+
+        <div class="card">
+          <div class="card-title">ironshell-x86</div>
+          <div class="card-desc">
+            Bare-metal x86 shellcode execution & analysis environment in pure 16-bit Assembly. 2-stage bootloader, TUI shell, 8 injectable payloads, sandbox layer, opcode scanner.
+          </div>
+          <div class="card-tags">
+            <span class="tag">Assembly</span>
+            <span class="tag">shellcode</span>
+            <span class="tag">bare-metal</span>
+          </div>
+          <a href="https://github.com/tc4dy/ironshell-x86" class="card-link" target="_blank" rel="noopener">github.com/tc4dy/ironshell-x86 →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Godas</div>
+          <div class="card-desc">
+            High-performance columnar data analysis library for Go — typed Series, expressive filter expressions, concurrent GroupBy aggregation, hash joins, CSV/JSON/Parquet I/O.
+          </div>
+          <div class="card-tags">
+            <span class="tag">Go</span>
+            <span class="tag">data</span>
+            <span class="tag">analytics</span>
+          </div>
+          <a href="https://github.com/tc4dy/godas" class="card-link" target="_blank" rel="noopener">github.com/tc4dy/godas →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">HuntCat</div>
+          <div class="card-desc">
+            Enterprise-grade web crawler & SEO auditor built in Go. Blazing-fast concurrent crawling with 50+ workers, smart SEO analysis, beautiful HTML/CSV reports.
+          </div>
+          <div class="card-tags">
+            <span class="tag">Go</span>
+            <span class="tag">crawler</span>
+            <span class="tag">SEO</span>
+          </div>
+          <a href="https://github.com/tc4dy/HuntCat" class="card-link" target="_blank" rel="noopener">github.com/tc4dy/HuntCat →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">DiscordCleaner</div>
+          <div class="card-desc">
+            Bulk deletion tool for Discord. Delete all messages from any user in any channel with smart rate-limit handling, batch processing, and real-time stats.
+          </div>
+          <div class="card-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Discord</span>
+            <span class="tag">tool</span>
+          </div>
+          <a href="https://github.com/tc4dy/DiscordCleaner" class="card-link" target="_blank" rel="noopener">github.com/tc4dy/DiscordCleaner →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Catify</div>
+          <div class="card-desc">
+            EXIF metadata tool. Extract camera settings, GPS coordinates (Google Maps/OSM links), detect duplicates via SHA256, save thumbnails. Terminal tables or export.
+          </div>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">EXIF</span>
+            <span class="tag">OSINT</span>
+          </div>
+          <a href="https://github.com/tc4dy/Catify" class="card-link" target="_blank" rel="noopener">github.com/tc4dy/Catify →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">SimplePot</div>
+          <div class="card-desc">
+            Educational basic honeypot, ~2500-line honeypot for learning attack patterns. 12+ protocols (SSH, HTTP, DNS, Modbus…). Captures credentials, maps MITRE ATT&CK, sends alerts.
+          </div>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">honeypot</span>
+            <span class="tag">MITRE</span>
+          </div>
+          <a href="https://github.com/tc4dy/SimplePot" class="card-link" target="_blank" rel="noopener">github.com/tc4dy/SimplePot →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="exploits">
+      <div class="section-label">PoC & toolkits</div>
+      <h2 class="section-title">Exploits</h2>
+
+      <div class="exploit-grid">
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-85706</div>
+          <div class="exploit-desc">
+            GitLab Unauth File Read Toolkit (CVSS 10.0). This exploit targets self-managed GitLab CE/EE 18.7 through 19.3.1, allowing an unauthenticated attacker to read arbitrary files from the server through a path traversal in the project import endpoint. The toolkit is split into two tools: a full exploit that dumps files, forges admin tokens and runs a mass scanner, plus a safe checker for blue team validation. Repo lives at tc4dy/CVE-2026-85706-PoC-Toolkit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-85706-PoC-Toolkit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-82329</div>
+          <div class="exploit-desc">
+            JFrog Artifactory Auth Bypass Toolkit (CVSS 9.8). Affects self-hosted Artifactory 7.x builds 111 to 161, where a JWT handling flaw lets an attacker forge admin sessions without valid credentials. The toolkit includes a full exploit with JWT forging, admin token creation, user creation and mass exploitation, plus a safe checker. Published as tc4dy/CVE-2026-82329-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-82329-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-54121</div>
+          <div class="exploit-desc">
+            CertiGhost AD CS Multi-Exploit Framework. Targets misconfigured Active Directory Certificate Services, combining rogue DC and LDAP servers with certificate abuse to extract PKINIT hashes from domain-joined machines. Includes a safe detect mode and a full exploitation mode with PKINIT hash extraction. Repo is tc4dy/CVE-2026-54121-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-54121-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-24061</div>
+          <div class="exploit-desc">
+            GNU inetutils-telnetd Auth Bypass Exploit. A CRLF injection in the NEW_ENVIRON telnet option lets a remote attacker bypass authentication and drop straight into a root shell on affected telnetd builds. Supports single-target and mass exploitation with multi-threading, written in Shell. Repo is tc4dy/CVE-2026-24061-PoC-Exploit under GPLv3.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-24061-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-0073</div>
+          <div class="exploit-desc">
+            Android ADB Wireless Debugging Exploit (CVSS 8.8). A zero-click authentication bypass via TLS type confusion in the wireless debugging stack lets an attacker gain an interactive shell on the device. The tool can also execute commands and scan local networks for vulnerable targets. Repo is tc4dy/CVE-2026-0073-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-0073-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-41091</div>
+          <div class="exploit-desc">
+            RedSun — Microsoft Defender LPE exploit. A low-privileged user can escalate to NT AUTHORITY\SYSTEM by abusing the Cloud Files API combined with NTFS junction trickery, forcing Defender to write malicious payloads into a controlled path. Written in C++. Repo is tc4dy/CVE-2026-41091-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-41091-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-65643</div>
+          <div class="exploit-desc">
+            cPanel Domain Parking RCE Toolkit (CVSS 8.7). Affects unpatched cPanel & WHM 11.x builds 110, 134, 136 and 138, where the domain parking feature can be abused to achieve remote code execution. The toolkit includes a full exploit with reverse shell, webshell and persistence options, plus a safe checker for defenders. Repo is tc4dy/CVE-2026-65643-PoC-Toolkit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-65643-PoC-Toolkit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-15409/15410</div>
+          <div class="exploit-desc">
+            SonicWall SMA1000 multi-exploit Framework. Chains SSRF to Erlang RPC, then to remote code execution and finally root privilege escalation on vulnerable SMA1000 appliances. Features include a safe detect mode, command execution, file read, privesc, RPC interaction, an interactive shell and batch threading. Repo is tc4dy/CVE-2026-15409-15410-Framework under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-15409-15410-Framework" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-58048</div>
+          <div class="exploit-desc">
+            cPanel Root SQL Execution Toolkit (CVSS 9.4). An SQL injection in unpatched cPanel & WHM 11.x lets an attacker execute arbitrary SQL as root, leading to full server compromise. The toolkit ships with a safe checker for auditing and a weaponized version that can spawn a reverse shell. Repo is tc4dy/CVE-2026-58048-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-58048-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-61511</div>
+          <div class="exploit-desc">
+            vBulletin Pre-Auth RCE (CVSS 9.8). Unpatched vBulletin 5.x and 6.x are vulnerable to a pre-authentication remote code execution via multiple exploit vectors, including endpoint pool abuse, AJAX and PHPFuck WAF bypass. The toolkit supports reverse shell, proxy, persistence, webshell and data exfiltration. Repo is tc4dy/CVE-2026-61511-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-61511-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-53921</div>
+          <div class="exploit-desc">
+            odhcpd Stack Overflow (CVSS 9.8). A stack overflow in odhcpd, the DHCPv6 server used by OpenWrt, can be triggered by crafted IA_NA or IA_PD options leading to remote code execution. The repo includes a detailed write-up, a verifier and multi-exploit support with MIPS and ARM shellcode. Repo is tc4dy/CVE-2026-53921-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-53921-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-29000</div>
+          <div class="exploit-desc">
+            pac4j-jwt Authentication Bypass (CVSS 10.0). A public-key JWE wrapping flaw in pac4j-jwt lets an attacker forge an admin token in one click, bypassing authentication entirely. Once in, the exploit can leak configs, users and secrets, with keep-alive, proxy and custom JWKS support. Repo is tc4dy/CVE-2026-29000-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-29000-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-41940</div>
+          <div class="exploit-desc">
+            cPanel/WHM Auth Bypass Exploit. A CRLF injection in the login flow leads to authentication bypass, session hijacking and account leakage on affected cPanel and WHM installs. The script supports proxies, custom user agents, keep-alive, retries and SSL verification toggles, with colored output. Repo is tc4dy/CVE-2026-41940-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-41940-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-64638</div>
+          <div class="exploit-desc">
+            WordPress Security Assessment Suite (CVSS 8.9). Targets WordPress 4.7.0 through 7.0.2 with a vulnerability assessment module and an advanced analysis module for deeper inspection. Includes both a safe check mode and an exploit mode for authorized testing. Repo is tc4dy/CVE-2026-64638-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-64638-PoC-Exploit" target="_blank" rel="noopener">view repo →</a>
+        </div>
+
+        <div class="exploit-item other">
+          <div class="exploit-id">Other exploits</div>
+          <div class="exploit-desc">View all repositories on GitHub</div>
+          <div class="other-links">
+            <a href="https://github.com/tc4dy?tab=repositories" target="_blank" rel="noopener">all repos →</a>
+            <a href="https://github.com/tc4dy" target="_blank" rel="noopener">profile →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="section-label">Open source & anti-censorship</div>
+      <h2 class="section-title">Privacy & Freedom</h2>
+
+      <div class="privacy-grid">
+
+        <div class="privacy-card">
+          <div class="privacy-card-header">
+            <div class="privacy-card-title">Support Tor for Freedom</div>
+            <div class="privacy-tags">
+              <span class="tag">repo</span>
+            </div>
+          </div>
+          <div class="privacy-desc">
+            This is a beginner-friendly guide designed to help anyone fight censorship by running Tor relays, bridges, and Snowflake proxies. Snowflake is a pluggable transport that routes Tor traffic through volunteer-operated WebRTC proxies, making it look like a video call instead of Tor traffic, which makes it much harder for censors to block. The guide includes ready-to-use configuration files, a list of free VPS providers where you can host a bridge or relay, and step-by-step instructions so you don't need deep technical knowledge to contribute. The goal is simple: make the Tor network stronger and more resilient by adding more volunteer-run entry points.
+          </div>
+          <a href="https://github.com/tc4dy/support-tor-for-freedom" class="privacy-link" target="_blank" rel="noopener">github.com/tc4dy/support-tor-for-freedom →</a>
+        </div>
+
+        <div class="privacy-card">
+          <div class="privacy-card-header">
+            <div class="privacy-card-title">LeaveMyInternet</div>
+            <div class="privacy-tags">
+              <span class="tag">site</span>
+            </div>
+          </div>
+          <div class="privacy-desc">
+            LeaveMyInternet is an open source awareness project focused on fighting for a free, private, and untracked internet. The project highlights how modern web tracking, telemetry, and data collection work in practice, and what regular people can do to reduce their digital footprint. It's not just a manifesto; it's a practical resource that points to concrete tools, browser configurations, and privacy-respecting alternatives. The goal is to make privacy accessible instead of something only experts can achieve.
+          </div>
+          <a href="https://leavemyinternet.github.io" class="privacy-link" target="_blank" rel="noopener">leavemyinternet.github.io →</a>
+        </div>
+
+        <div class="privacy-card">
+          <div class="privacy-card-header">
+            <div class="privacy-card-title">BeautifulSource</div>
+            <div class="privacy-tags">
+              <span class="tag">site</span>
+            </div>
+          </div>
+          <div class="privacy-desc">
+            BeautifulSource is a comprehensive guide to open source alternatives for everyday closed-source software. It covers categories like operating systems, browsers, office suites, media players, development tools, and more, listing what you can replace and why it matters. The project is built on the idea that people shouldn't have to sacrifice usability or quality just to use software they can audit and control. Each entry explains what the tool does, what it replaces, and where to get it, making the switch from closed-source software as easy as possible.
+          </div>
+          <a href="https://beautifulsource.github.io" class="privacy-link" target="_blank" rel="noopener">beautifulsource.github.io →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-label">Get in touch</div>
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-box">
+        <p>Session Message ID (https://getsession.org/)</p>
+        <div class="session-id">
+          05841dfac9c52eca3ff487c344c8550e4c2fa9c798a9b139b08d5517178fc1ab58
+        </div>
+        <p style="margin-top: 24px; font-size: 0.85rem; color: #7a6a8a;">
+          Open for collaborations, security research, and low-level discussions.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Tc4dy · c4d/al1en · Planet 9, Backrooms
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
