@@ -93,6 +93,45 @@
       <div class="grid-2">
 
         <div class="card">
+          <div class="card-title">privmeta</div>
+          <div class="card-desc" data-i18n="projects.privmeta">
+            A local-first CLI privacy tool to inspect, clean, and spoof EXIF/metadata. Strip GPS tracking and hidden tags from images, PDFs, and video files. Inject realistic fake camera profiles and city coordinates.
+          </div>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">privacy</span>
+            <span class="tag">metadata</span>
+          </div>
+          <a href="https://github.com/tc4dy/privmeta" class="card-link" target="_blank" rel="noopener">github.com/tc4dy/privmeta →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">SentinelProxyV2</div>
+          <div class="card-desc" data-i18n="projects.sentinelproxyv2">
+            High-performance multi-threaded engine designed for elite network operations. Bypasses rate-limits with rapid proxy scraping and real-time validation. Optimized for stealth and seamless connection handling.
+          </div>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">proxy</span>
+            <span class="tag">networking</span>
+          </div>
+          <a href="https://github.com/tc4dy/SentinelProxyV2" class="card-link" target="_blank" rel="noopener">github.com/tc4dy/SentinelProxyV2 →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Cat-System</div>
+          <div class="card-desc" data-i18n="projects.catsystem">
+            Modular Windows 10/11 optimizer for privacy hardening, performance sculpting, and network tuning. Ships either as a fully modular Core/Helpers/Modules architecture or as a single portable script.
+          </div>
+          <div class="card-tags">
+            <span class="tag">PowerShell</span>
+            <span class="tag">Windows</span>
+            <span class="tag">privacy</span>
+          </div>
+          <a href="https://github.com/tc4dy/Cat-System" class="card-link" target="_blank" rel="noopener">github.com/tc4dy/Cat-System →</a>
+        </div>
+
+        <div class="card">
           <div class="card-title">ironshell-x86</div>
           <div class="card-desc" data-i18n="projects.ironshell">
             Bare-metal x86 shellcode execution & analysis environment in pure 16-bit Assembly. 2-stage bootloader, TUI shell, 8 injectable payloads, sandbox layer, opcode scanner.
@@ -178,6 +217,30 @@
       <h2 class="section-title" data-i18n="exploits.title">Exploits</h2>
 
       <div class="exploit-grid">
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-21589</div>
+          <div class="exploit-desc" data-i18n="exploits.cve21589">
+            Atlassian Data Center Unauth Arbitrary File Read (CVSS 9.3). Red/Blue Team suite with 2 tools: Full Exploit (path traversal, WEB-INF read, interactive shell, 8 products, mass scan, loot) and a safe checker for defenders. Repo is tc4dy/CVE-2026-21589-PoC-Exploit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-21589-PoC-Exploit" target="_blank" rel="noopener" data-i18n="exploits.viewRepo">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-111497</div>
+          <div class="exploit-desc" data-i18n="exploits.cve111497">
+            Node.js Brotli Decoder OOB Write (CVSS 9.2). Red/Blue Team suite for unpatched Node.js 22.x, 24.x and 26.x. 2 tools: Full Exploit (patch detection, remote DoS, Brotli bomb, lab RCE) plus a safe checker for blue team validation. Repo is tc4dy/CVE-2026-111497-Toolkit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-111497-Toolkit" target="_blank" rel="noopener" data-i18n="exploits.viewRepo">view repo →</a>
+        </div>
+
+        <div class="exploit-item">
+          <div class="exploit-id">CVE-2026-85097</div>
+          <div class="exploit-desc" data-i18n="exploits.cve85097">
+            Bricksforge WordPress Plugin Unauth File Upload to RCE Toolkit (CVSS 10.0). Red/Blue Team suite for Bricksforge Pro Forms < 3.1.8.9. 2 tools: Full Exploit (polyglot upload, web shell, mass scan) plus a safe checker for defenders. Repo is tc4dy/CVE-2026-85097-Toolkit under MIT.
+          </div>
+          <a href="https://github.com/tc4dy/CVE-2026-85097-Toolkit" target="_blank" rel="noopener" data-i18n="exploits.viewRepo">view repo →</a>
+        </div>
 
         <div class="exploit-item">
           <div class="exploit-id">CVE-2026-85706</div>
