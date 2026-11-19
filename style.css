@@ -282,6 +282,11 @@ section {
   z-index: 2;
 }
 
+#exploits,
+#projects {
+  padding-top: 28px;
+}
+
 .section-label {
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -789,7 +794,38 @@ footer {
 }
 
 .projects-banner {
-  margin: 0 0 32px;
+  margin: 0 0 0;
+}
+
+.miside-projects-banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 16px 0 0;
+  padding-left: 1%;
+}
+
+.miside-projects-banner img {
+  display: block;
+  width: min(600px, 96%);
+  max-height: 560px;
+  height: auto;
+  object-fit: contain;
+  object-position: left center;
+  border-radius: 20px;
+}
+
+@media (max-width: 760px) {
+  .miside-projects-banner {
+    margin: 12px 0 0;
+    padding-left: 0;
+  }
+
+  .miside-projects-banner img {
+    width: min(440px, 96%);
+    max-height: 380px;
+  }
 }
 
 .miside-between {
@@ -808,7 +844,7 @@ footer {
   height: auto;
   object-fit: contain;
   object-position: left center;
-  border-radius: 14px;
+  border-radius: 20px;
 }
 
 @media (max-width: 760px) {
@@ -827,7 +863,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin: 25px 0;
+  margin: 16px 0 0;
 }
 
 .exploit-banner img {
@@ -835,7 +871,7 @@ footer {
   width: min(420px, 90%);
   height: auto;
   object-fit: contain;
-  border-radius: 14px;
+  border-radius: 20px;
 }
 
 @media (max-width: 760px) {
