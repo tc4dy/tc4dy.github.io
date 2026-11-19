@@ -797,14 +797,14 @@ footer {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin: 30px 0 45px;
+  margin: 20px 0 25px;
   padding-left: 1%;
 }
 
 .miside-between img {
   display: block;
-  width: min(480px, 94%);
-  max-height: 500px;
+  width: min(600px, 96%);
+  max-height: 560px;
   height: auto;
   object-fit: contain;
   object-position: left center;
@@ -813,12 +813,33 @@ footer {
 
 @media (max-width: 760px) {
   .miside-between {
-    margin: 22px 0 32px;
+    margin: 15px 0 20px;
     padding-left: 0;
   }
 
   .miside-between img {
-    width: min(380px, 94%);
-    max-height: 340px;
+    width: min(440px, 96%);
+    max-height: 380px;
+  }
+}
+
+.exploit-banner {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.exploit-banner img {
+  display: block;
+  width: min(420px, 90%);
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+@media (max-width: 760px) {
+  .exploit-banner img {
+    width: min(340px, 90%);
   }
 }
